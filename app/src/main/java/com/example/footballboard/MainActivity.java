@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 savedInstanceState.containsKey("second")) {
             secondteam = savedInstanceState.getInt("second");
             TextView counterView = findViewById(R.id.secondteam_counter);
-            counterView.setText(secondteam.toString());
+            dcounterView.setText(secondteam.toString());
         }
 
     }
