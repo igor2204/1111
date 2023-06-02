@@ -7,44 +7,45 @@
     tools:context=".MainActivity">
 
     <Button
-        android:onClick="onClickBtnAddSecondT"
         android:id="@+id/btn1"
-        android:layout_width="190dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="4dp"
         android:backgroundTint="#FF6D00"
+        android:onClick="onClickBtnAddSecondT"
         android:text="@string/tablo1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <Button
-        android:onClick="onClickBtnAddFirsT"
         android:id="@+id/btn2"
-        android:layout_width="190dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
         android:backgroundTint="#FF6D00"
+        android:onClick="onClickBtnAddFirsT"
         android:text="@string/tablo2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <Button
-        android:onClick="Reset"
         android:id="@+id/btn3"
-        android:layout_width="190dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
         android:backgroundTint="#FF6D00"
+        android:onClick="Reset"
         android:text="@string/tablo3"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn1"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.734"
+        app:layout_constraintVertical_bias="0.87"
         tools:visibility="visible" />
 
     <TextView
@@ -55,6 +56,7 @@
         android:textSize="75sp"
         app:layout_constraintBottom_toTopOf="@+id/btn2"
         app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -71,25 +73,25 @@
         android:id="@+id/firstimage"
         android:layout_width="115dp"
         android:layout_height="341dp"
-        android:src="@drawable/CSKA"
+        android:src="@drawable/cska"
         app:layout_constraintBottom_toTopOf="@+id/btn1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toStartOf="@+id/btn1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.725" />
 
     <ImageView
         android:id="@+id/secondimage"
-        android:layout_width="196dp"
-        android:layout_height="319dp"
+        android:layout_width="200dp"
+        android:layout_height="169dp"
         android:src="@drawable/spartak"
         app:layout_constraintBottom_toTopOf="@+id/btn2"
         app:layout_constraintEnd_toEndOf="@+id/btn2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.726" />
+        app:layout_constraintVertical_bias="0.598" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
