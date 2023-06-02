@@ -6,13 +6,90 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:onClick="onClickBtnAddSecondT"
+        android:id="@+id/btn1"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#FF6D00"
+        android:text="@string/tablo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <Button
+        android:onClick="onClickBtnAddFirsT"
+        android:id="@+id/btn2"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#FF6D00"
+        android:text="@string/tablo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <Button
+        android:onClick="Reset"
+        android:id="@+id/btn3"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FF6D00"
+        android:text="@string/tablo3"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/firstteam_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/secondteam_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn1" />
+
+    <ImageView
+        android:id="@+id/firstimage"
+        android:layout_width="115dp"
+        android:layout_height="341dp"
+        android:src="@drawable/CSKA"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <ImageView
+        android:id="@+id/secondimage"
+        android:layout_width="196dp"
+        android:layout_height="319dp"
+        android:src="@drawable/spartak"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
